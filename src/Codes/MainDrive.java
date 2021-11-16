@@ -52,6 +52,10 @@ public class MainDrive {
 
 			}
 
+//			사용이 끝났으면 br / fr 닫아주자.
+			br.close();
+			fr.close();
+
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
