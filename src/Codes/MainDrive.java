@@ -26,14 +26,17 @@ public class MainDrive {
 		try {
 
 //			한 글자를 2byte 다룬다. -> 한번에 한글자씩만 처리함.
-			FileWriter fw = new FileWriter(myFile);
+			FileWriter fw = new FileWriter(myFile, true);
 
 //			"안녕하세요" 문장을 통째로 다루게 도와주는 클래스 사용.
 
 			BufferedWriter bw = new BufferedWriter(fw);
 
 //			실제 문장 기록 : bw를 이용하자.
-			bw.append("안녕하세요.");
+			bw.append("수고하셨습니다.");
+
+//			다음줄로 내리자.
+			bw.newLine();
 
 //			파일은 다 쓰면 닫아주자. (다른곳에서도 사용 가능하게)
 
